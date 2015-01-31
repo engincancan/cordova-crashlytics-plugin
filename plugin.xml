@@ -27,14 +27,14 @@
     <license>Apache 2.0</license>
     <keywords>cordova,crashlytics</keywords>
 
-    <js-module src="www/crashlytics.js" name="crashlytics">
-        <clobbers target="navigator.crashlytics" />
+    <js-module src="www/crashlytics.js" name="CrashlyticsPlugin">
+        <clobbers target="navigator.CrashlyticsPlugin" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="Crashlytics" >
+            <feature name="CrashlyticsPlugin" >
                 <param name="android-package" value="org.apache.cordova.crashlytics.CrashlyticsPlugin"/>
             </feature>
         </config-file>

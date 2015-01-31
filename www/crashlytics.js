@@ -16,7 +16,7 @@ var Crashlytics = function(){
         console.warn("navigator.crashlytics not defined : considering you're in dev mode and mocking it !");
         execCall = function(methodName, args){ console.log("[Crashlytics] Call to "+methodName+"("+Array.prototype.join.apply(args, [", "])+")"); }
     } else {
-        execCall = function(methodName, args){ exec(null, null, "Crashlytics", methodName, args); };
+        execCall = function(methodName, args){ exec(function(){console.log("success");}, function(){console.log("error");}, "CrashlyticsPlugin", methodName,  [args[0]]); };
     }
 
     var self = this;
