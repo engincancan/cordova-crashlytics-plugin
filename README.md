@@ -69,4 +69,5 @@ Use the following snippet to integrate the plugin in your AngularJS app graceful
             };
         }]);
     }]);
+	
 
