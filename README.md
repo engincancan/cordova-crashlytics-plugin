@@ -32,7 +32,7 @@ Update your `platforms/android/AndroidManifest.xml` file by adding your crashlyt
 ## Crashlytics
 
 Some of the functions aren't working. I use only "logException" for now.
-Plugins provides a `navigator.crashlytics` object with following methods :
+Plugins provides a `navigator.CrashlyticsPlugin` object with following methods :
 - logException(string) : Sends an exception (non fatal) to the Crashlytics backend
 - setBool(key, value)
 - setDouble(key, value)
