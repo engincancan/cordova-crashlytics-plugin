@@ -65,7 +65,7 @@ Use the following snippet to integrate the plugin in your AngularJS app graceful
                 // stacktrace-js (http://www.stacktracejs.com/) to format exception stacktraces before
                 // sending it to the native bridge
                 var stacktrace = $window.printStackTrace({e: exception});
-                navigator.crashlytics.logException(["ERROR: "+message+", stacktrace: "+stacktrace]);
+                navigator.CrashlyticsPlugin.logException(["ERROR: "+message+", stacktrace: "+stacktrace]);
             };
         }]);
     }]);
